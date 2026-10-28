@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 💡 新增：解決部分外部圖片（如 Pexels）防盜鏈與 CORS 載入問題 -->
+  <meta name="referrer" content="no-referrer">
+  <title>毛孩質感生活館 | Pawzaa</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+</head>
+<body>
+
+  <!-- 頂部導覽列 -->
+  <header>
+    <div class="container nav-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="毛孩質感生活館" class="logo-img">
+        </a>
+      </div>
+
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="active">首頁</a></li>
+          <li><a href="products.html">所有商品</a></li>
+          <li><a href="size-guide.html">尺寸指南</a></li>
+          <li><a href="about.html">關於我們</a></li>
+          <li><a href="cart.html">購物車</a></li>
+        </ul>
+      </nav>
+
+      <!-- 手機版漢堡選單按鈕 (放置於 nav 後方以確保置右) -->
+      <button class="hamburger" id="hamburger-btn" aria-label="開啟選單" aria-expanded="false" aria-controls="nav-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- 主要內容區 -->
+  <main>
+    <!-- Hero 主視覺區塊（內容由 JSON 動態填入） -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-kicker" id="hero-kicker"></div>
+        <h1 class="hero-title" id="hero-title"></h1>
+        <p class="hero-subtitle" id="hero-subtitle"></p>
+        <a href="products.html" class="hero-cta" id="hero-cta"></a>
+      </div>
+    </section>
+
+    <!-- 特色卡片區塊（內容由 JSON 動態填入） -->
+    <section class="features">
+      <div class="container">
+        <h2 class="section-title" id="features-title"></h2>
+        <div class="features-grid" id="features-grid"></div>
+      </div>
+    </section>
+
+    <!-- 常見問題區塊（內容由 JSON 動態填入） -->
+    <section class="faq">
+      <div class="container">
+        <h2 class="section-title" id="faq-title"></h2>
+        <div class="faq-list" id="faq-list"></div>
+      </div>
+    </section>
+
+    <!-- 聯絡我們區塊（內容由 JSON 動態填入） -->
+    <section class="contact">
+      <div class="container">
+        <h2 class="contact-title" id="contact-title"></h2>
+        <p class="contact-desc" id="contact-desc"></p>
+        <a href="mailto:pawzaa.land@gmail.com" class="contact-button">聯繫客服</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- 頁尾區塊（內容由 JSON 動態填入） -->
+  <footer>
+    <div class="container">
+      <p id="footer-text"></p>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+     JavaScript：動態讀取 JSON 資料並渲染至 DOM
+     ========================================================================== -->
+  <script src="js/script.js"></script>
+</body>
+</html>

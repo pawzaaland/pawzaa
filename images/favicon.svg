@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- 背景：圓角深胡桃木棕矩形 -->
+  <rect width="64" height="64" rx="16" fill="#3A2B24" />
+  
+  <!-- 前景：溫暖燕麥米色爪印圖案 -->
+  <g fill="#F8F6F2">
+    <!-- 主肉墊 -->
+    <path d="M32 32c-6 0-11 4-11 9 0 4.5 4.5 7 11 7s11-2.5 11-7c0-5-5-9-11-9z" />
+    <!-- 四顆腳趾腳墊 -->
+    <circle cx="19" cy="27" r="4" />
+    <circle cx="27" cy="21" r="4.5" />
+    <circle cx="37" cy="21" r="4.5" />
+    <circle cx="45" cy="27" r="4" />
+  </g>
+</svg>

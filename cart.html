@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="no-referrer">
+  <title>購物車 | 毛孩質感生活館 Pawzaa</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+</head>
+<body>
+
+  <!-- 頂部導覽列 -->
+  <header>
+    <div class="container nav-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="毛孩質感生活館" class="logo-img">
+        </a>
+      </div>
+
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html">首頁</a></li>
+          <li><a href="products.html">所有商品</a></li>
+          <li><a href="size-guide.html">尺寸指南</a></li>
+          <li><a href="about.html">關於我們</a></li>
+          <li><a href="cart.html" class="active">購物車</a></li>
+        </ul>
+      </nav>
+
+      <!-- 手機版漢堡選單按鈕 -->
+      <button class="hamburger" id="hamburger-btn" aria-label="開啟選單" aria-expanded="false" aria-controls="nav-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+<!-- 主要內容區 -->
+  <main class="container">
+    <section>
+      <h1 class="page-title">購物車</h1>
+
+      <!-- 購物車主要區塊 (預設隱藏) -->
+      <div class="cart-layout" id="cart-content" style="display: none;">
+        <!-- 左側：品項明細與配送選擇 -->
+        <div class="cart-main">
+          <!-- 商品明細卡片 -->
+          <div class="cart-section">
+            <h2 class="cart-section-title" id="cart-item-count">選購商品 (0)</h2>
+            <!-- 動態商品列表容器 -->
+            <div id="cart-items-container"></div>
+          </div>
+
+          <!-- 運送與付款方式選項 -->
+          <div class="cart-section">
+            <h2 class="cart-section-title">配送與付款方式</h2>
+            <div class="form-group">
+              <label for="shipping-method" class="form-label">運送方式</label>
+              <select id="shipping-method" class="form-select">
+                <option value="60">超商取貨付款 (7-11 / 全家) - NT$ 60</option>
+                <option value="100">宅配到府 - NT$ 100</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="payment-method" class="form-label">付款方式</label>
+              <select id="payment-method" class="form-select">
+                <option value="cod">超商取貨付款</option>
+                <option value="credit">信用卡線上刷卡</option>
+                <option value="transfer">ATM 轉帳匯款</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- 右側：訂單金額摘要 -->
+        <aside class="summary-card">
+          <h2 class="cart-section-title">訂單摘要</h2>
+          <div class="summary-row">
+            <span>商品小計</span>
+            <span id="subtotal-val">NT$ 0</span>
+          </div>
+          <div class="summary-row">
+            <span>預估運費</span>
+            <span id="shipping-val">NT$ 60</span>
+          </div>
+          <div class="summary-row total">
+            <span>應付總金額</span>
+            <span id="total-val">NT$ 60</span>
+          </div>
+          <button class="checkout-btn" onclick="alert('感謝您的試用！此為前端範例購物車。')">前往結帳</button>
+          <a href="products.html" class="continue-shopping">繼續選購商品</a>
+        </aside>
+      </div>
+
+      <!-- 空購物車畫面 (預設顯示) -->
+      <div class="empty-cart" id="empty-cart-msg" style="display: block;">
+        <p>您的購物車目前沒有任何商品</p>
+        <a href="products.html" class="hero-cta" style="padding: 10px 24px;">前往選購商品</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- 頁尾 -->
+  <footer>
+    <div class="container">
+      <p>pawzaa.land@gmail.com 統一編號60783740</p>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+     JavaScript：互動邏輯與金額計算
+     ========================================================================== -->
+  <script src="js/script.js"></script>
+</body>
+</html>

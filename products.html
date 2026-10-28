@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="no-referrer">
+  <title>所有商品 | 毛孩質感生活館 Pawzaa</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+</head>
+<body>
+
+  <!-- 導覽列 -->
+  <header>
+    <div class="container nav-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="毛孩質感生活館" class="logo-img">
+        </a>
+      </div>
+
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html">首頁</a></li>
+          <li><a href="products.html" class="active">所有商品</a></li>
+          <li><a href="size-guide.html">尺寸指南</a></li>
+          <li><a href="about.html">關於我們</a></li>
+          <li><a href="cart.html">購物車</a></li>
+        </ul>
+      </nav>
+
+      <!-- 手機版漢堡選單按鈕 -->
+      <button class="hamburger" id="hamburger-btn" aria-label="開啟選單" aria-expanded="false" aria-controls="nav-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- 主要內容 -->
+  <main class="container">
+    <section>
+      <h1 class="page-title">所有商品</h1>
+      
+      <!-- 分類選單 -->
+      <div class="filter-group">
+        <button class="filter-btn active">全部商品</button>
+        <button class="filter-btn">日常服飾</button>
+        <button class="filter-btn">外出配件</button>
+        <button class="filter-btn">居家用品</button>
+      </div>
+
+      <!-- 商品列表 -->
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="images/design.jpg" alt="極簡有機棉純色保暖衣" class="product-img">
+          <div class="product-info">
+            <span class="product-category">日常服飾</span>
+            <h2 class="product-name">保暖衣</h2>
+            <!-- <div class="product-price">NT$ 780</div> -->
+            <a href="/product-list/product-organic-cotton-shirt.html" class="product-btn">查看詳情</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="images/harness.jpg" alt="防減壓透氣胸背帶組" class="product-img">
+          <div class="product-info">
+            <span class="product-category">外出配件</span>
+            <h2 class="product-name">背帶組</h2>
+            <!-- <div class="product-price">NT$ 1,280</div> -->
+            <a href="/product-list/product-harness-set.html" class="product-btn">查看詳情</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="images/coat.jpg" alt="日系防水防風外出連帽外套" class="product-img">
+          <div class="product-info">
+            <span class="product-category">日常服飾</span>
+            <h2 class="product-name">外出連帽外套</h2>
+            <!-- <div class="product-price">NT$ 1,080</div> -->
+            <a href="/product-list/product-windproof-coat.html" class="product-btn">查看詳情</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="images/mat.jpg" alt="親膚慢回彈居家寵物軟墊" class="product-img">
+          <div class="product-info">
+            <span class="product-category">居家用品</span>
+            <h2 class="product-name">寵物軟墊</h2>
+            <!-- <div class="product-price">NT$ 1,580</div> -->
+            <a href="/product-list/product-memory-foam-mat.html" class="product-btn">查看詳情</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 頁尾 -->
+  <footer>
+    <div class="container">
+      <p>pawzaa.land@gmail.com 統一編號60783740</p>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+     JavaScript：手機版漢堡選單互動邏輯
+     ========================================================================== -->
+  <script src="js/script.js"></script>
+</body>
+</html>
