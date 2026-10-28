@@ -1,0 +1,17 @@
+# 安裝產生的套件
+node_modules/
+
+# 環境設定：可能包含密碼或 API 金鑰
+.env
+.env.*
+
+# 保留不含機密資料的環境設定範本
+!.env.example
+
+# 執行紀錄與暫存檔
+*.log
+*.tmp
+
+# 作業系統自動產生的檔案
+.DS_Store
+Thumbs.db
